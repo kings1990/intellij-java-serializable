@@ -1,0 +1,29 @@
+<idea-plugin>
+    <id>com.kings.intellij-java-serializable</id>
+    <name>Kings Test</name>
+    <vendor email="963987632@qq.com" url="http://github.com/kings1990">Kings Company</vendor>
+
+    <description><![CDATA[
+      Kings first idea plugin.<br>
+      <em>Kings idea plugin</em>
+    ]]></description>
+
+    <!-- please see https://www.jetbrains.org/intellij/sdk/docs/basics/getting_started/plugin_compatibility.html
+         on how to target different products -->
+    <depends>com.intellij.modules.platform</depends>
+    <depends>com.intellij.modules.platform</depends>
+    <depends>com.intellij.modules.lang</depends>
+    <depends>com.intellij.modules.java</depends>
+
+    <extensions defaultExtensionNs="com.intellij">
+        <!-- Add your extensions here -->
+    </extensions>
+
+    <actions>
+        <group id="g1">
+            <action id="1" class="io.github.kings1990.serializable.SerializableAction" text="Serializable Bean" description="Serializable bean"/>
+            <action id="2" class="io.github.kings1990.serializable.SerializableWithIdAction" text="Serializable Bean With Id" description="Serializable bean With id"/>
+            <add-to-group group-id="GenerateGroup" anchor="last"/>
+        </group>
+    </actions>
+</idea-plugin>

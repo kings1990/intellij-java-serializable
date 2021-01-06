@@ -1,0 +1,46 @@
+buildscript {
+    repositories {
+        maven { name "Alibaba" ; url 'https://maven.aliyun.com/repository/public' }
+        maven { name "M2" ; url 'https://plugins.gradle.org/m2/' }
+    }
+}
+
+
+plugins {
+    id 'java'
+    id 'org.jetbrains.intellij' version '0.6.5'
+}
+
+group 'com.kings'
+version '1.0-SNAPSHOT'
+
+repositories {
+    maven { url '/Users/wilson/develop/maven/localRepository'}
+    mavenLocal()
+    maven { name "Alibaba" ; url "https://maven.aliyun.com/repository/public" }
+    mavenCentral()
+}
+
+dependencies {
+    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.6.0'
+    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine'
+
+}
+
+
+// See https://github.com/JetBrains/gradle-intellij-plugin/
+intellij {
+    version '2020.3.1'
+    plugins = ['com.intellij.java']
+}
+patchPluginXml {
+    changeNotes """
+      1.升级xxx.<br>
+      2.修复yyy.<br>
+      <em>最好用的插件</em>"""
+}
+test {
+    useJUnitPlatform()
+}
+sourceCompatibility = JavaVersion.VERSION_1_8
+targetCompatibility = JavaVersion.VERSION_1_8
