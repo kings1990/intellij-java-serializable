@@ -36,11 +36,15 @@ public class SerializableWithIdAction extends AnAction {
         int offset = text.indexOf("{");
         int offsetPackage = text.indexOf(";");
 
-        if(!text.contains("Serializable")){
+        if(!text.contains(" Serializable") || !text.contains("serialVersionUID") ){
             Runnable runnable = () -> {
-                document.insertString(offset + 1, "\n\tprivate static final long serialVersionUID = 1L;");
-                document.insertString(offset - 1, " implements Serializable ");
-                document.insertString(offsetPackage +1, "\nimport java.io.Serializable;\n");
+                if(!text.contains("serialVersionUID")) {
+                    document.insertString(offset + 1, "\n\tprivate static final long serialVersionUID = 1L;");
+                }
+                if(!text.contains(" Serializable")) {
+                    document.insertString(offset - 1, " implements Serializable");
+                    document.insertString(offsetPackage + 1, "\nimport java.io.Serializable;\n");
+                }
             };
             WriteCommandAction.runWriteCommandAction(project, runnable);
         }

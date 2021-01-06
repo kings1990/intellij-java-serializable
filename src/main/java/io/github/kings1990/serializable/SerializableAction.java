@@ -30,9 +30,9 @@ public class SerializableAction  extends AnAction {
         int offset = text.indexOf("{");
         int offsetPackage = text.indexOf(";");
 
-        if(!text.contains("Serializable")){
+        if(!text.contains(" Serializable")){
             Runnable runnable = () -> {
-                document.insertString(offset - 1, " implements Serializable ");
+                document.insertString(offset - 1, " implements Serializable");
                 document.insertString(offsetPackage +1, "\nimport java.io.Serializable;\n");
             };
             WriteCommandAction.runWriteCommandAction(project, runnable);
