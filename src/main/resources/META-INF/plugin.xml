@@ -1,14 +1,14 @@
 <idea-plugin>
     <id>com.kings.intellij-java-serializable</id>
     <name>Intellij Java Serializable</name>
-    <vendor email="963987632@qq.com" url="http://github.com/kings1990"/>
+    <vendor email="963987632@qq.com" url="http://github.com/kings1990" />
 
     <description><![CDATA[
       Simple operation to let the java bean implements Serializable
       <hr/>
       <a href="http://github.com/kings1990/intellij-java-serializable">Github</a>
       <br/>
-      <img src="http://kings-img.test.upcdn.net/kings1990/idea/intellij-java-serializable.png" alt="screenshot" />
+      <img src="https://raw.githubusercontent.com/kings1990/intellij-java-serializable/master/screenshot/1.gif" alt="screenshot" />
     ]]></description>
 
     <!-- please see https://www.jetbrains.org/intellij/sdk/docs/basics/getting_started/plugin_compatibility.html
