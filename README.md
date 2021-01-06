@@ -2,3 +2,4 @@
 
 java bean serializable tool
 
+![](screenshot/intellij-java-serializable.png)

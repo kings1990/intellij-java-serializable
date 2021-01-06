@@ -35,9 +35,10 @@ intellij {
 }
 patchPluginXml {
     changeNotes """
-      1.升级xxx.<br>
-      2.修复yyy.<br>
-      <em>最好用的插件</em>"""
+      1.Let the java bean implements Serializable<br>
+      2.Add serialVersionUID<br>
+     
+      """
 }
 test {
     useJUnitPlatform()
