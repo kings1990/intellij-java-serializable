@@ -6,4 +6,4 @@ pluginManagement {
         gradlePluginPortal()
     }
 }
-rootProject.name = 'intellij-java-serializable'
+rootProject.name = 'serializable-java'

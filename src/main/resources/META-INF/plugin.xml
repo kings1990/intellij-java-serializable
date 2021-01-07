@@ -1,6 +1,6 @@
 <idea-plugin>
-    <id>com.kings.intellij-java-serializable</id>
-    <name>Intellij Java Serializable</name>
+    <id>com.kings.serializable java</id>
+    <name>Serializable Java</name>
     <vendor email="963987632@qq.com" url="http://github.com/kings1990" />
 
     <description><![CDATA[
@@ -8,7 +8,7 @@
       <hr/>
       <a href="http://github.com/kings1990/intellij-java-serializable">Github</a>
       <br/>
-      <img src="https://raw.githubusercontent.com/kings1990/intellij-java-serializable/master/screenshot/1.gif" alt="screenshot" />
+      <img src="https://plugins.jetbrains.com/files/15763/screenshot_978cd1fd-5cea-4548-847a-3e0d3a48b3e4" alt="screenshot" />
     ]]></description>
 
     <!-- please see https://www.jetbrains.org/intellij/sdk/docs/basics/getting_started/plugin_compatibility.html
